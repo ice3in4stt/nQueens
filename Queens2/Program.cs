@@ -45,25 +45,7 @@ namespace Queens2
             Console.WriteLine(totalTime);
 
 
-            //ThreadingTest();
-
             /*
-            int x = 2;
-            int y = 2;
-            int z = 0;
-
-            if ((z = x + y) >= 3)
-            {
-                Console.WriteLine(z);
-            }
-            else
-            {
-                Console.Write("Else ");
-                Console.WriteLine(z);
-            }
-    
-
-            
 
             int[] array = new int[] { 1, 2, 3, 4 };
 
