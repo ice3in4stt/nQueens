@@ -5,6 +5,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
+
+//Program solves nQueen problem. Enhanced with methods which will specify and increase the performance of the program.
+
 namespace Queens2
 {
     class Program 
@@ -137,8 +140,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Returns List<Board> of boards with unique solutions for the n queen problem. Prints
-        /// amount of total solutions for given board size.
+        /// Returns List<Board> of boards with all unique n queen solutions for the given board size.
         /// </summary>
         /// <param name="size"></param>
         /// <returns></returns>
@@ -156,8 +158,6 @@ namespace Queens2
                     list.Add(item2);
                 }
             }
-
-            Console.WriteLine("Ratkaisuiden määrä: " + list.Count);
 
             List<int> indexes = new List<int>();
 
@@ -190,11 +190,11 @@ namespace Queens2
 
 
         /// <summary>
-        /// Returns list of boards with one queen placed in each board on the first row in different position.
-        /// Tähän tulee selitys siitä että käytetään säikeistämiseen...-----
+        /// Returns a list of boards with each containing a queen on each horizontal positon on the first row.
         /// </summary>
         /// <param name="size"></param>
         /// <returns></returns>
+        /// Threading explanation to be added here.
 
         public static List<Board> Generator(int size)
         {
@@ -206,7 +206,7 @@ namespace Queens2
 
             boards.Add((Board)board.Clone());
 
-            while (board.Queens.First().tryMove(1, 0))
+            while (board.Queens.First().tryMove(1,0))
             {
                 boards.Add((Board)board.Clone());
             }

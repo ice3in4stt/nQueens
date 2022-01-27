@@ -23,10 +23,11 @@ namespace Queens2
 
 
         /// <summary>
-        /// Checks if it is possible to move queen to a given cordinates. Returns boolean, if true will move queen to a given cordinates.
+        /// Attempts to move the queen given distances horizontally and vertically (x,y). 
+        /// Returns true if the attempt succeeded.
         /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
+        /// <param name="x">Vertical step</param>
+        /// <param name="y">Horizontal step</param>
         /// <returns></returns>
         public bool tryMove(int x, int y) 
         {
@@ -49,8 +50,8 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Checks if this queen is positioned diagonally or laterally in comparison to other queen on the board, 
-        /// if it is then the queens threathen one another and will return true, otherwise returns false. 
+        /// Checks if this queen is positioned laterally, horizontally or diagonally in relation to the other queen. 
+        /// If the queens threaten eachother method returns true. 
         /// </summary>
         /// <param name="other"></param>
         /// <returns></returns>

@@ -19,7 +19,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Add a queen to a board with the given cordinates.
+        /// Add a queen to the board at the given cordinates.
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
@@ -30,7 +30,7 @@ namespace Queens2
 
 
         /// <summary>
-        /// Checks does the queens threaten eachother on the board.
+        /// Checks if any queens threaten eachother on the board.
         /// </summary>
         /// <returns></returns>
         public bool IsValid()
@@ -50,7 +50,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Returns mirrored version of the board.
+        /// Returns mirrored copy of the board.
         /// </summary>
         /// <returns></returns>
         public Board MirroredBoard()
@@ -65,7 +65,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Returns 90 degrees rotated version of the board.
+        /// Returns 90 degrees rotated copy of the board.
         /// </summary>
         /// <returns></returns>
         public Board rotatedBoard()
@@ -81,7 +81,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Returns Board for a given size with randomly placed queens on each row.
+        /// Returns Board for a given size with randomly placed queen on each row.
         /// </summary>
         /// <param name="size"></param>
         /// <returns></returns>
@@ -119,11 +119,10 @@ namespace Queens2
 
 
         /// <summary>
-        /// Returns list of valid Board solutions for a given board.
+        /// Returns list of valid Board solutions for the given board.
         /// </summary>
         /// <param name="board"></param>
         /// <returns></returns>
-
         public static List<Board> ValidBoards(Board board)
         {
             List<Board> boards = new List<Board>();
@@ -156,7 +155,7 @@ namespace Queens2
         }
 
         /// <summary>
-        /// Prints the queens on the board.
+        /// Draws the board in the console.
         /// </summary>
 
         public void Print()

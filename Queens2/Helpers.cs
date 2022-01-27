@@ -14,9 +14,6 @@ namespace Queens2
         /// <param name="max">max value (inclusive)</param>
         /// <param name="list">list of unallowed integers</param>
         /// <returns></returns>
-        /// 
-
-        
         public static int randomNumber(int max, List<int> list)
         {
             Random random = new Random();
@@ -30,7 +27,14 @@ namespace Queens2
             return x;
         }
 
-
+        /// <summary>
+        /// Compares if lists have the same content regardless of order.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list1"></param>
+        /// <param name="list2"></param>
+        /// <returns></returns>
+        /// Method was copied as is from Stackoverflow.
         public static bool ScrambledEquals<T>(IEnumerable<T> list1, IEnumerable<T> list2)
         {
             var cnt = new Dictionary<T, int>();
