@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 
 
-//Program solves nQueen problem. Enhanced with methods which will specify and increase the performance of the program.
+//Program solves nQueen problem. Enhanced with methods which will specify the solution variatons and increase the performance of the program.
 
 namespace Queens2
 {
